@@ -24,6 +24,7 @@
       "logo": "media/finals.png",
       "enabled": true,
       "notes": "Enabled for 2026 NBA Finals window."
+    },
     {
       "id": "world_cup_2026",
       "kind": "world_cup",
