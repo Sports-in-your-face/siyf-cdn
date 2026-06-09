@@ -27,5 +27,15 @@
     "NOT": "NFO",
     "BRI": "BHA",
     "WH": "WHU"
+  },
+  "mlb": {
+    "WSH": "WAS",
+    "CWS": "CHW",
+    "OAK": "ATH",
+    "AZ": "ARI",
+    "SF": "SF",
+    "TB": "TB",
+    "KC": "KC",
+    "SD": "SD"
   }
 }

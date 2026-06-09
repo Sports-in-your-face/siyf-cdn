@@ -48,6 +48,30 @@
       "logo": null,
       "enabled": false,
       "notes": "Enable for World Cup window when ready to ship."
+    },
+    {
+      "id": "world_series_2025",
+      "kind": "world_series",
+      "sport": "BASEBALL",
+      "label": "World Series",
+      "keywords": ["world series"],
+      "activeFrom": "2025-10-01",
+      "activeUntil": "2026-11-15",
+      "logo": "media/finals-game.png",
+      "enabled": true,
+      "notes": "World Series marquee window."
+    },
+    {
+      "id": "mlb_all_star_2026",
+      "kind": "all_star",
+      "sport": "BASEBALL",
+      "label": "MLB All-Star",
+      "keywords": ["all-star", "all star", "mlb all-star"],
+      "activeFrom": "2026-01-01",
+      "activeUntil": "2026-12-31",
+      "logo": "media/all-star-game.png",
+      "enabled": true,
+      "notes": "All-Star Game logo for MLB marquee cards."
     }
   ]
 }

@@ -1,15 +1,7 @@
 {
   "version": 2,
-  "syncedAt": "2026-06-08T00:31:41.313Z",
+  "syncedAt": "2026-06-09T15:55:10.736Z",
   "sports": [
-    {
-      "sport": "nba",
-      "teams": 30
-    },
-    {
-      "sport": "nfl",
-      "teams": 32
-    },
     {
       "sport": "epl",
       "teams": 20
@@ -17,6 +9,14 @@
     {
       "sport": "mlb",
       "teams": 30
+    },
+    {
+      "sport": "nba",
+      "teams": 30
+    },
+    {
+      "sport": "nfl",
+      "teams": 32
     },
     {
       "sport": "nhl",
@@ -30,17 +30,17 @@
   },
   "paths": {
     "teams": [
-      "teams/nba.json",
-      "teams/nfl.json",
       "teams/epl.json",
       "teams/mlb.json",
+      "teams/nba.json",
+      "teams/nfl.json",
       "teams/nhl.json"
     ],
     "logos": [
-      "media/logos/nba/",
-      "media/logos/nfl/",
       "media/logos/epl/",
       "media/logos/mlb/",
+      "media/logos/nba/",
+      "media/logos/nfl/",
       "media/logos/nhl/"
     ],
     "players": [],
