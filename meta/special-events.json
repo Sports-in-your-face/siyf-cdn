@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "events": [
     {
       "id": "super_bowl_lx",
@@ -7,23 +7,41 @@
       "sport": "FOOTBALL",
       "label": "Super Bowl LX",
       "keywords": ["super bowl", "super bowl lx", "super bowl 60"],
-      "activeFrom": "2026-01-20",
-      "activeUntil": "2026-02-25",
-      "logo": null,
-      "enabled": false,
-      "notes": "Set enabled=true and logo once the event is official."
+      "schedule": {
+        "type": "single_peak",
+        "peakDate": "2026-02-08",
+        "warmupDays": 14,
+        "cooldownDays": 1
+      },
+      "nav": {
+        "slug": "super-bowl",
+        "shortLabel": "Super Bowl",
+        "showLeadDays": 10,
+        "priority": 100
+      },
+      "logo": "media/superbowl.png",
+      "enabled": true
     },
     {
       "id": "nba_finals_2026",
       "kind": "nba_finals",
       "sport": "BASKETBALL",
       "label": "NBA Finals",
-      "keywords": ["nba finals"],
-      "activeFrom": "2026-05-01",
-      "activeUntil": "2026-06-30",
+      "keywords": ["nba finals", "nba championship"],
+      "schedule": {
+        "type": "series",
+        "startDate": "2026-06-04",
+        "endDate": "2026-06-22",
+        "cooldownDays": 1
+      },
+      "nav": {
+        "slug": "nba-finals",
+        "shortLabel": "NBA Finals",
+        "showLeadDays": 5,
+        "priority": 95
+      },
       "logo": "media/finals-game.png",
-      "enabled": true,
-      "notes": "Enabled for 2026 NBA Finals window."
+      "enabled": true
     },
     {
       "id": "nba_all_star_2026",
@@ -31,35 +49,110 @@
       "sport": "BASKETBALL",
       "label": "NBA All-Star",
       "keywords": ["all-star", "all star", "nba all-star"],
-      "activeFrom": "2026-01-01",
-      "activeUntil": "2026-12-31",
+      "schedule": {
+        "type": "weekend",
+        "startDate": "2026-02-13",
+        "endDate": "2026-02-16"
+      },
+      "nav": {
+        "slug": "nba-all-star",
+        "shortLabel": "All-Star",
+        "showLeadDays": 4,
+        "priority": 85
+      },
       "logo": "media/all-star-game.png",
-      "enabled": true,
-      "notes": "All-Star Game logo for curated marquee cards."
+      "enabled": true
+    },
+    {
+      "id": "stanley_cup_2026",
+      "kind": "stanley_cup",
+      "sport": "HOCKEY",
+      "label": "Stanley Cup Final",
+      "keywords": ["stanley cup", "stanley cup final", "cup final"],
+      "schedule": {
+        "type": "series",
+        "startDate": "2026-06-03",
+        "endDate": "2026-06-20",
+        "cooldownDays": 1
+      },
+      "nav": {
+        "slug": "stanley-cup",
+        "shortLabel": "Stanley Cup",
+        "showLeadDays": 5,
+        "priority": 94
+      },
+      "logo": "media/stanleycup.png",
+      "enabled": true
     },
     {
       "id": "world_cup_2026",
       "kind": "world_cup",
       "sport": "SOCCER",
       "label": "FIFA World Cup",
-      "keywords": ["world cup", "fifa world cup"],
-      "activeFrom": "2026-06-01",
-      "activeUntil": "2026-07-20",
-      "logo": null,
-      "enabled": false,
-      "notes": "Enable for World Cup window when ready to ship."
+      "keywords": ["world cup", "fifa world cup", "world cup group", "world cup knockout"],
+      "schedule": {
+        "type": "tournament",
+        "startDate": "2026-06-11",
+        "endDate": "2026-07-19",
+        "cooldownDays": 1
+      },
+      "nav": {
+        "slug": "world-cup",
+        "shortLabel": "World Cup",
+        "showLeadDays": 14,
+        "priority": 98,
+        "requiresGames": false
+      },
+      "feeds": {
+        "espnLeague": "fifa.world",
+        "espnStandingsPath": "/apis/v2/sports/soccer/fifa.world/standings",
+        "apiSportsLeagueId": 1,
+        "apiSportsSeason": 2026
+      },
+      "logo": "media/worldcup.png",
+      "enabled": true
     },
     {
-      "id": "world_series_2025",
+      "id": "mls_cup_2026",
+      "kind": "mls_cup",
+      "sport": "SOCCER",
+      "label": "MLS Cup",
+      "keywords": ["mls cup", "mls cup final"],
+      "schedule": {
+        "type": "single_peak",
+        "peakDate": "2026-12-06",
+        "warmupDays": 7,
+        "cooldownDays": 1
+      },
+      "nav": {
+        "slug": "mls-cup",
+        "shortLabel": "MLS Cup",
+        "showLeadDays": 5,
+        "priority": 86
+      },
+      "logo": "media/mls-cup.png",
+      "enabled": true
+    },
+    {
+      "id": "world_series_2026",
       "kind": "world_series",
       "sport": "BASEBALL",
       "label": "World Series",
       "keywords": ["world series"],
-      "activeFrom": "2025-10-01",
-      "activeUntil": "2026-11-15",
-      "logo": "media/finals-game.png",
-      "enabled": true,
-      "notes": "World Series marquee window."
+      "schedule": {
+        "type": "series",
+        "startDate": "2026-10-24",
+        "endDate": "2026-11-05",
+        "cooldownDays": 1
+      },
+      "nav": {
+        "slug": "world-series",
+        "shortLabel": "World Series",
+        "showLeadDays": 5,
+        "priority": 90
+      },
+      "logo": "media/mlb-commisioner-trophy.png",
+      "enabled": true
     },
     {
       "id": "mlb_all_star_2026",
@@ -67,11 +160,19 @@
       "sport": "BASEBALL",
       "label": "MLB All-Star",
       "keywords": ["all-star", "all star", "mlb all-star"],
-      "activeFrom": "2026-01-01",
-      "activeUntil": "2026-12-31",
+      "schedule": {
+        "type": "weekend",
+        "startDate": "2026-07-14",
+        "endDate": "2026-07-15"
+      },
+      "nav": {
+        "slug": "mlb-all-star",
+        "shortLabel": "All-Star",
+        "showLeadDays": 4,
+        "priority": 82
+      },
       "logo": "media/all-star-game.png",
-      "enabled": true,
-      "notes": "All-Star Game logo for MLB marquee cards."
+      "enabled": true
     }
   ]
 }
